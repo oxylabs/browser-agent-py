@@ -1,10 +1,12 @@
 # Browser Agent
 
-HEADER[]
+[![AI-Scraper Header]()]()
+
+[![](https://dcbadge.limes.pink/api/server/Pds3gBmKMH?style=for-the-badge&theme=discord)](https://discord.gg/Pds3gBmKMH) [![YouTube](https://img.shields.io/badge/YouTube-Oxylabs-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@oxylabs)
 
 **[Browser Agent](https://aistudio.oxylabs.io/apps/browser_agent)** is an AI browser automation tool from **[Oxylabs AI Studio](https://aistudio.oxylabs.io/)**. It simulates real user browsing by executing multi-step actions like clicking links, filling forms, scrolling, capturing screenshots, and then extracting structured data – all controlled through natural language prompts.
 
-Unlike traditional automation frameworks (e.g., Puppeteer or Selenium), Browser Agent requires no static scraping rules or manual scripting. Users can describe tasks in plain English or provide a sequence of steps, and the browser AI will carry them out just like a human would.
+Unlike traditional automation frameworks (e.g., Puppeteer or Selenium), Browser Agent requires no static scraping rules or manual scripting. Users can describe tasks in plain English or provide a sequence of steps, and the AI will carry them out just like a human would.
 
 ## Key features
 
@@ -34,7 +36,7 @@ pip install oxylabs-ai-studio
 ```
 ### Code examples (Python)
 
-The following examples show how to use a browser AI agent to perform browsing and data extraction.
+The following examples show how to use the browser AI agent to perform browsing and data extraction.
 
 ```python
 from oxylabs_ai_studio.apps.browser_agent import BrowserAgent
@@ -90,11 +92,22 @@ You can also check out our [AI Studio JavaScript SDK](https://github.com/oxylabs
 
 ### Output samples
 
-Browser Agent can return parsed results or screenshots that are easy to integrate into your applications.  
-This is a direct output example of our request code:
+Browser Agent can return parsed results or screenshots that are easy to integrate into your applications. This is a direct output example of our request code:
 
 ```json
-type='json' content={'games': [{'game_name': 'Super Mario Odyssey', 'platform': None, 'review_stars': None, 'price': 89.99}]}
+{
+  "type": "json",
+  "content": {
+    "games": [
+      {
+        "game_name": "Super Mario Odyssey",
+        "platform": null,
+        "review_stars": null,
+        "price": 89.99
+      }
+    ]
+  }
+}
 ```
 Browser Agent supports multiple output formats (`"output": "YOUR_FORMAT"`):
 
