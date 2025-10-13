@@ -1,6 +1,6 @@
 # Browser Agent
 
-[![AI-Scraper Header]()]()
+[![AI-Scraper Header](https://github.com/oxylabs/browser-agent-py/blob/main/Github-AI-Studio-1200x628px-Browser-Agent.png)](https://aistudio.oxylabs.io/apps/browser_agent?utm_source=877&utm_medium=affiliate&utm_campaign=ai_studio&utm_content=browser-agent-py&groupid=877&transaction_id=102f49063ab94276ae8f116d224b67)
 
 [![](https://dcbadge.limes.pink/api/server/Pds3gBmKMH?style=for-the-badge&theme=discord)](https://discord.gg/Pds3gBmKMH) [![YouTube](https://img.shields.io/badge/YouTube-Oxylabs-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@oxylabs)
 
