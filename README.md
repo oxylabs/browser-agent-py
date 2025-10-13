@@ -59,22 +59,6 @@ result = browser_agent.run(
 print(result.data)
 ```
 
-To capture screenshots, use the following Browser Agent workflow:
-
-```python
-from oxylabs_ai_studio.apps.browser_agent import BrowserAgent
-
-browser_agent = BrowserAgent(api_key="<API_KEY>")
-
-result = browser_agent.run(
-    url="https://example.com",
-    user_prompt="Take a screenshot of this page",
-    output_format="screenshot"
-)
-
-with open("screenshot.png", "wb") as f:
-    f.write(result.data)
-```
 Learn more about Browser Agent and Oxylabs AI Studio Python SDK in our [PyPI repository](https://pypi.org/project/oxylabs-ai-studio/).  
 You can also check out our [AI Studio JavaScript SDK](https://github.com/oxylabs/oxylabs-ai-studio-js?tab=readme-ov-file#oxylabs-ai-studio-javascript-sdk) guide for JS users.
 
