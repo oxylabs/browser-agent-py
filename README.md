@@ -112,7 +112,7 @@ Results:
 }
 ```
 
-Here is a screenshot ouput of our second request:
+Here is a screenshot output of our second request:
 
 ![Browser Agent screenshot output](./screenshot.png)
 
