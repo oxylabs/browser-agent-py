@@ -79,7 +79,20 @@ You can also check out our [AI Studio JavaScript SDK](https://github.com/oxylabs
 Browser Agent can return parsed results or screenshots that are easy to integrate into your applications. This is a direct output example of our request code:
 
 ```json
-type='json' content={'games': [{'game_name': 'Super Mario Odyssey', 'platform': None, 'review_stars': None, 'price': 89.99}]}
+Results:
+{
+  "type": "json",
+  "content": {
+    "games": [
+      {
+        "game_name": "Super Mario Odyssey",
+        "platform": "Nintendo Switch",
+        "review_stars": null,
+        "price": 89.99
+      }
+    ]
+  }
+}
 ```
 Browser Agent supports multiple output formats (`"output": "YOUR_FORMAT"`):
 
