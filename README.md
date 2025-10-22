@@ -65,7 +65,7 @@ The example below captures a PNG screenshot while using Browser Agent.
 import base64
 from oxylabs_ai_studio.apps.browser_agent import BrowserAgent
 
-browser_agent = BrowserAgent(api_key="r6VVJ7dyS76uX11jSHmnx1euKvpD0TmRCrtfujw4")
+browser_agent = BrowserAgent(api_key="<API_KEY>")
 
 result = browser_agent.run(
     url = "https://sandbox.oxylabs.io/",
