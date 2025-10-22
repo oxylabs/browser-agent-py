@@ -59,6 +59,23 @@ result = browser_agent.run(
 print(result.data)
 ```
 
+The example below captures a PNG screenshot while using Browser Agent.
+
+```python
+import base64
+from oxylabs_ai_studio.apps.browser_agent import BrowserAgent
+
+browser_agent = BrowserAgent(api_key="r6VVJ7dyS76uX11jSHmnx1euKvpD0TmRCrtfujw4")
+
+result = browser_agent.run(
+    url = "https://sandbox.oxylabs.io/",
+    user_prompt= "Go to the website and take a screenshot of the home page",
+    output_format="screenshot",
+)
+
+with open("screenshot.png", "wb") as f:
+    f.write(base64.b64decode(result.data.content["data"]))
+```
 Learn more about Browser Agent and Oxylabs AI Studio Python SDK in our [PyPI repository](https://pypi.org/project/oxylabs-ai-studio/).  
 You can also check out our [AI Studio JavaScript SDK](https://github.com/oxylabs/oxylabs-ai-studio-js?tab=readme-ov-file#oxylabs-ai-studio-javascript-sdk) guide for JS users.
 
@@ -76,7 +93,7 @@ You can also check out our [AI Studio JavaScript SDK](https://github.com/oxylabs
 
 ### Output samples
 
-Browser Agent can return parsed results or screenshots that are easy to integrate into your applications. This is a direct output example of our request code:
+Browser Agent can return parsed results or screenshots that are easy to integrate into your applications. This is a direct output example of our first request code:
 
 ```json
 Results:
@@ -94,6 +111,11 @@ Results:
   }
 }
 ```
+
+Here is a screenshot ouput of our second request:
+
+![Browser Agent screenshot output](./screenshot.png)
+
 Browser Agent supports multiple output formats (`"output": "YOUR_FORMAT"`):
 
 - `json` – structured data using schema-based parsing.  
